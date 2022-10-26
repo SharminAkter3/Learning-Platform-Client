@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+## My Project Name:
+Web Development 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### My Project Client Side Link :
+https://github.com/programming-hero-web-course1/b610-learning-platform-client-side-SharminAkter3
 
-## Available Scripts
+### My Project Sever Side Link:
+https://github.com/programming-hero-web-course1/b610-lerning-platform-server-side-SharminAkter3
 
-In the project directory, you can run:
+### My Live Website Link :
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Features
+1. Clickable course card.
+2. Firebase authentication.
+3. Course Details page.
+4. Mobile and decktop responsive
+5. Toggle theme (dark/light)
+6. CheckOut page
+7. private Route
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+### Technologies
+=> Client Side :
+1. React 
+2. Bootstrap 
+3. React router dom
+4. Firebase
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+=>Server:
+1. Node 
+2. Express 
+3. vercel
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Important of my projects : 
+=> Website development is the process of designing, developing, and maintaining a website. Essentially, the difference between web development and website design is that the designer in website design designs the user interface of the website. On the other side, web designers work with web developers to incorporate web design into the web development process.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+=> Here i can use different library components of react-router dom and i uses loader for load dynamic data. Also uses useContext in main layout so that minimize loader component.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Working Procedre:
+1. npm i react-router-dom
+2. create a router-using createBrowserRouter
+3. Add RouterProvider and set router prop
+4. Create a lot of components
+5. Create main layout with some common part and changing part based on the router
+6. set main layout at the root of the route
+7. set children routes
+8. set links on the header components
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

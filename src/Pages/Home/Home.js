@@ -1,9 +1,11 @@
 import React from 'react';
+import './Home.css'
 
 const Home = () => {
+
     return (
-        <div className='d-flex align-middle justify-content-center m-2 p-2'>
-            <div className='ms-4 mt-5 me-4 p-3 w-100'>
+        <div className='home align-middle justify-content-center m-2 p-2'>
+            <div className='home-title ms-4 mt-5 me-4 p-3 w-100'>
                 <h4 className='fs-1'>Welcome To My <small className='text-primary fw-bold fs-1'>Web Development</small> Website</h4>
                 <p className='fs-5'>Web development refers to the building, creating, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management. It is the creation of an application that works over the internet i.e. websites.</p>
             </div>

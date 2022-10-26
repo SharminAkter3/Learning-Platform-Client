@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Theme = () => {
+const ToggleMode = () => {
     return (
         <div>
-            <h1>Theme</h1>
+
         </div>
     );
 };
 
-export default Theme;
+export default ToggleMode;

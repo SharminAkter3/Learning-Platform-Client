@@ -19,7 +19,6 @@ const Login = () => {
 
     const from = location.state?.from?.pathname || '/';
 
-
     const googleProvider = new GoogleAuthProvider();
     const githubProvider = new GithubAuthProvider();
 
