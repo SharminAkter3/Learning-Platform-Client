@@ -1,7 +1,9 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
+import { Link, useLoaderData } from 'react-router-dom';
+import Course from '../Course/Course';
 
 const Courses = () => {
     const [courses, setCourses] = useState([]);
@@ -17,18 +19,18 @@ const Courses = () => {
             <div>
                 <h2 className='fs-4 text-primary m-3 p-3 d-flex justify-content-center'>All Courses : {courses.length}</h2>
             </div>
-            <div className='d-flex'>
+            <Container className='d-flex'>
                 <div className='fs-4 ms-4 p-2'>
                     {
-                        courses.map(course => <p key={course.id}>
-                            <Link to={`/courses/${course.id}`}>{course.name}</Link>
+                        courses.map(c => <p key={c.id}>
+                            <Link to={`/courses/${c.id}`}>{c.name}</Link>
                         </p>)
                     }
                 </div>
                 <div>
-
+                    <Course></Course>
                 </div>
-            </div>
+            </Container>
         </div>
     );
 };
