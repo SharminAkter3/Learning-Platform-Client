@@ -15,7 +15,6 @@ const Course = () => {
             .then(data => setCourse(data));
     }, [])
 
-
     return (
         <Container>
             <Row>
