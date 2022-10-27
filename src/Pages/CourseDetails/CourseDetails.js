@@ -44,7 +44,7 @@ const CourseDetails = () => {
                             <Card.Text>
                                 {details}
                             </Card.Text>
-                            <Link className='font-bold' to={`/courses/${id}`}><button className='btn btn-primary w-full'>Details</button></Link>
+                            <Link className='font-bold' to={`/checkout/courses/${id}`}><button className='btn btn-primary w-full'>Get premium access</button></Link>
                         </Card.Body>
                     </Card>
                 </div>

@@ -7,7 +7,7 @@ const CoursesList = (props) => {
     return (
         <li className='mb-2 px-2'>
             <Link to={`/courses/${id}`}>
-                <button className="btn btn-outline btn-secondary w-full">{name}</button>
+                <button className="btn btn-outline btn-secondary w-100">{name}</button>
             </Link>
         </li>
     );

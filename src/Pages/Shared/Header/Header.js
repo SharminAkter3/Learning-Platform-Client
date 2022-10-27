@@ -12,7 +12,7 @@ const Header = () => {
     const { user, logOut } = useContext(AuthContext);
     const [isHovering, setIsHovering] = useState(false);
     const [isClicked, setIsClicked] = useState(false);
-    const [open, setOpen] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
 
     const handleLogOut = () => {
         logOut()
@@ -38,11 +38,12 @@ const Header = () => {
 
     return (
         <div className='d-flex justify-content-between header'>
-            <div className='d-flex'>
+            <div className='d-flex logo'>
                 <img src="https://files.helpdocs.io/DQYx96GtMn/other/1553267885698/1174215797-dec-302-c-416-c-52-eaac-5-fc-46.png" alt="" />
                 <h2>Web Development</h2>
             </div>
-            <div className={`absolute ${open ? 'top-4' : 'top-[-120px]'}`}>
+
+            <div className={isMobile ? 'nav-links-mobile' : 'nav-links'} onClick={() => setIsMobile(false)}>
                 <Link to='/'>Home</Link>
                 <Link to='/courses'>Courses</Link>
                 <Link to='/faq'>FAQ</Link>
@@ -69,19 +70,21 @@ const Header = () => {
                     }
                 </Link>
 
-                <Link href="#" className='btn fs-2' onClick={() => toggleTheme()} style={isClicked ? ({ backgroundColor: `#181818`, color: `#fff` }) : (
+                <Link href="#" className='btn-toggle fs-4' onClick={() => toggleTheme()} style={isClicked ? ({ backgroundColor: `#181818`, color: `#fff` }) : (
                     { backgroundImage: `linear-gradient(135deg, ${color1}, ${color2})` }
                 )}>{isClicked ? 'Light' : "Dark"}</Link>
 
             </div>
-            {/* <Link onClick={() => setOpen(!open)} className=" h-6 w-6">
-                {
-                    open ? <FaTimes></FaTimes> : <FaBars></FaBars>
-                }
+            <div>
+                <Link className='mobile-menu' onClick={() => setIsMobile(!isMobile)}>
+                    {
+                        isMobile ? <FaTimes></FaTimes> : <FaBars></FaBars>
+                    }
 
-            </Link> */}
+                </Link>
 
-        </div>
+            </div>
+        </div >
     );
 };
 
