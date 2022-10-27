@@ -17,7 +17,7 @@ export const routes = createBrowserRouter([
     {
         path: '/',
         element: <Main></Main>,
-        loader: () => fetch(`http://localhost:5000/courses`),
+        loader: () => fetch(`https://react-third-assingment-server2.vercel.app/courses`),
         children: [
             {
                 path: '/',
@@ -30,12 +30,12 @@ export const routes = createBrowserRouter([
             {
                 path: '/courses/:id',
                 element: <CourseDetails></CourseDetails>,
-                loader: ({ params }) => fetch(`http://localhost:5000/courses/${params.id}`)
+                loader: ({ params }) => fetch(`https://react-third-assingment-server2.vercel.app/courses/${params.id}`)
             },
             {
                 path: '/checkout/courses/:id',
                 element: <PrivateRoute><CheckOut></CheckOut></PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5000/courses/${params.id}`)
+                loader: ({ params }) => fetch(`https://react-third-assingment-server2.vercel.app/courses/${params.id}`)
 
             },
             {
