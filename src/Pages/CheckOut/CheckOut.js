@@ -1,8 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Card } from 'react-bootstrap';
-import { Link, useLoaderData } from 'react-router-dom';
+import { useLoaderData } from 'react-router-dom';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const CheckOut = () => {
+    const notify = () => toast("WOW!!! CheckOut Complete!!!");
     const course = useLoaderData();
     const { name, id, details, photo_URL } = course;
 
@@ -19,7 +23,7 @@ const CheckOut = () => {
                     <Card.Text>
                         {details}
                     </Card.Text>
-                    <button className='btn btn-primary w-full'>ChcekOut</button>
+                    <button onClick={notify} className='btn btn-primary w-full'>ChcekOut</button>
                 </Card.Body>
             </Card>
         </div>
